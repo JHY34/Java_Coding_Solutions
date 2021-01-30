@@ -43,6 +43,25 @@ public class Array_Finding_Highest_SecondHighest_ThirdHighest_Numbers {
 
     }
 
+    public static int thirdHighestNumber (int[] arr) {
+        int highestNumber = Integer.MIN_VALUE;
+        int secondHighestNumber = Integer.MIN_VALUE;
+
+        for (int i=0; i<arr.length; i++) {
+
+            if (arr[i]> highestNumber) {
+                secondHighestNumber = highestNumber;
+                highestNumber = arr[i];
+            }
+            else if (arr[i]> secondHighestNumber && arr[i] != highestNumber) {
+                secondHighestNumber = arr[i];
+            }
+        }
+
+        return secondHighestNumber;
+
+    }
+
 }
 
 
