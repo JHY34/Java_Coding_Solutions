@@ -5,6 +5,7 @@ public class PalindromeNumber {
     public static void main(String[] args) {
 
         // palindrome -> 1234321
+        // Dont use String
 
         System.out.println(isNumberPalindrome(123));    // false
         System.out.println(isNumberPalindrome(12321));  // true
