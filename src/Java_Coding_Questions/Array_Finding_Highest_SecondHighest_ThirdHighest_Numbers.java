@@ -6,7 +6,9 @@ public class Array_Finding_Highest_SecondHighest_ThirdHighest_Numbers {
 
         int[] arr1 = {3,5,10,2,56,-21,15,56};
 
-        System.out.println(secondHighestNumber(arr1));
+        System.out.println("highestNumber(arr1) = " + highestNumber(arr1));
+        System.out.println("secondHighestNumber(arr1) = " + secondHighestNumber(arr1));
+        System.out.println("thirdHighestNumber(arr1) = " + thirdHighestNumber(arr1));
 
     }
 
@@ -55,11 +57,12 @@ public class Array_Finding_Highest_SecondHighest_ThirdHighest_Numbers {
                 secondHighestNumber = highestNumber;
                 highestNumber = arr[i];
             }
-            else if (arr[i]> secondHighestNumber && arr[i] != highestNumber) {
+            else if (arr[i]> secondHighestNumber && arr[i] < highestNumber) {
+                thirdHighestNumber = secondHighestNumber;
                 secondHighestNumber = arr[i];
             }
-            else if (arr[i]> thirdHighestNumber && arr[i] != secondHighestNumber) {
-                secondHighestNumber = arr[i];
+            else if (arr[i]> thirdHighestNumber && arr[i] < secondHighestNumber) {
+                thirdHighestNumber = arr[i];
             }
         }
 
