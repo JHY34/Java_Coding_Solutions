@@ -3,13 +3,13 @@ package Java_Coding_Questions;
 public class ReverseWordsWithoutChangingOrder {
     public static void main(String[] args) {
 
-        String abc = "I love javaaaalllll";
+        String abc = "I love java";
 
-        System.out.println(reverseString(abc));
+        System.out.println(reverseSentence(abc));
 
     }
     // str == I love java --> I evol avaj
-    public static String reverseString (String str) {
+    public static String reverseSentence (String str) {
         String[] arr = str.split(" ");
         String result = "";
 
