@@ -4,7 +4,10 @@ public class Array_Finding_Highest_SecondHighest_ThirdHighest_Numbers {
 
     public static void main(String[] args) {
 
-        int[] arr1 = {15,3,5,10,2,56,-21,15,-56};
+        int[] arr1 = {10,1,3,5,10,2,56,-21,15,-56};
+        // h min 15   15
+        // s min min  3
+        // t min min  min
 
         System.out.println("highestNumber(arr1) = " + highestNumber(arr1));
         System.out.println("secondHighestNumber(arr1) = " + secondHighestNumber(arr1));
